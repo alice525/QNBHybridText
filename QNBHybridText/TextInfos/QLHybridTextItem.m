@@ -102,6 +102,8 @@ static NSInteger totalCount = 0;
 - (id)init {
     if (self = [super init]) {
         [self resetParameters];
+        
+        //test
     }
     
     return self;
