@@ -2222,7 +2222,7 @@ CGFloat MyGetImgWidthCallback( void* refCon ){
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if (self.currentLinkComponent) {
+    if (self.componentsAndPlainText.linkComponents) {
         if ([_delegate respondsToSelector:@selector(rtLabel:didSelectLinkWithURL:)]) {
             [_delegate rtLabel:self didSelectLinkWithURL:[self.currentLinkComponent.attributes objectForKey:@"href"]];
         }

@@ -110,5 +110,6 @@ typedef enum
 - (void)translateNormalTextToRichText;
 
 - (BOOL)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event location:(CGPoint)location;
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
 
 @end
